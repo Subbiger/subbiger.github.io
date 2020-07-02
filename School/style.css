@@ -4,12 +4,12 @@ html{
     padding: 0;
     color: rgb(75, 75, 75);
     background: rgb(240, 240, 240);
-    min-width: 1500px;
-    max-width: 1920px;
 }
 body{
     margin: 0 auto;
     font-size: 1.5em;
+    min-width: 1500px;
+    max-width: 1920px;
 }
 a, a:visited, a:hover{
     color:rgb(87, 87, 87);
