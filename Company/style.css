@@ -1,6 +1,8 @@
 body{
     font-family: Open Sans, sans-serif;
     background-color: white;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 #scroll_up{
     display: none;
@@ -647,6 +649,12 @@ input[type=text3]{
     .clients img{
         height: 10px;
     }
+    #scroll_up{
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
+    }    
 }
 
 @media all and (max-width: 600px){
