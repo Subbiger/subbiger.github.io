@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png">
+            <h1>Ремонт техники</h1>
+        </div>          
+        <div class="menu_list">
+          <a href="#about" uk-scroll>О нас</a>
+          <a href="#list" uk-scroll>Виды ремонта</a>
+          <a href="#map" uk-scroll>Карта</a>
+          <a href="#order" uk-scroll>Заказать</a>
+        </div>  
+
+    </div>
+    <div class="back">
+        <div class="top">
+            <h1>Ремонт техники "Фикс"</h1>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="about">
+            <h2 id="about">О НАС</h2>
+            <div class="line"></div>
+            <h2 class="parah2">ГАРАНТИЯ КАЧЕСТВА</h2>
+            <div class="para">
+                <p>Наша компания гарантирует качественный ремонт вашего оборудования. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Curabitur metus erat, cursus vitae interdum a, euismod in ligula. 
+                    Phasellus finibus elit in felis lobortis, non lacinia nulla pulvinar. 
+                    Suspendisse hendrerit turpis quis libero molestie viverra. 
+                    Morbi molestie porta purus, non semper diam vulputate imperdiet. Vestibulum porta, mauris nec cursus malesuada, 
+                    dolor magna mattis est, non porttitor augue turpis quis eros. Suspendisse lorem turpis, dictum vitae rhoncus at, 
+                    consectetur eget arcu. Nullam ac magna felis. Sed condimentum lorem diam, in pretium odio rhoncus id.</p>
+                <img src="img/appr.png"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            </div>
+            <div class="line"></div>
+            <h2 class="para2h2">БЫСТРЫЙ РЕМОНТ</h2>
+            <div class="para2">
+                <img src="img/cl.png"  uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+                <p>В нашем рспоряжении множество опытных мастеров, которые займутся вашим заказом по завершению оформления. 
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Curabitur metus erat, cursus vitae interdum a, euismod in ligula. 
+                    Phasellus finibus elit in felis lobortis, non lacinia nulla pulvinar. 
+                    Suspendisse hendrerit turpis quis libero molestie viverra. 
+                    Morbi molestie porta purus, non semper diam vulputate imperdiet. Vestibulum porta, mauris nec cursus malesuada, 
+                    dolor magna mattis est, non porttitor augue turpis quis eros. Suspendisse lorem turpis, dictum vitae rhoncus at, 
+                    consectetur eget arcu. Nullam ac magna felis. Sed condimentum lorem diam, in pretium odio rhoncus id.</p>
+                    
+            </div>
+            <div class="line"></div>
+            <h2 class="parah2">РАБОТАЕМ ПО ВСЕМУ ГОРОДУ</h2>
+            <div class="para">
+                <p>Множество филиалов позволяют нам работать по всему городу.    
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Curabitur metus erat, cursus vitae interdum a, euismod in ligula. 
+                    Phasellus finibus elit in felis lobortis, non lacinia nulla pulvinar. 
+                    Suspendisse hendrerit turpis quis libero molestie viverra. 
+                    Morbi molestie porta purus, non semper diam vulputate imperdiet. Vestibulum porta, mauris nec cursus malesuada, 
+                    dolor magna mattis est, non porttitor augue turpis quis eros. Suspendisse lorem turpis, dictum vitae rhoncus at, 
+                    consectetur eget arcu. Nullam ac magna felis. Sed condimentum lorem diam, in pretium odio rhoncus id.</p>
+                <img src="img/2.png"  uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            </div>
+            <div class="line"></div>
+        </div>
+        <h2 id="list" class="cat_h2">КАТАЛОГ РЕМОНТИРУЕМОЙ ТЕХНИКИ</h2>
+        <div class="line"></div>
+        <div class="techs">
+            <h2>КОМПЬЮТЕРЫ И ТВ</h2>
+            <div class="comp">
+                <img src="img/comp.png">
+                <div class="tech_desc">
+                    <p>Перечень стандартных ремнотных работ в этой категории включает в себя:</p>
+                    <a class="button" id="button1">РАЗВЕРНУТЬ</a>
+                    <div class="line"></div>
+                    <ul id="tech_list1" class="tech_list">
+                        <li>- Прошивка</li>
+                        <li>- Замена частей</li>
+                        <li>- Установка операционной системы</li>
+                        <li>- Sed condimentum lorem</li>
+                        <li>- Suspendisse hendrerit turpis</li>
+                        <li>- Lorem ipsum dolor</li>
+                        <li>- non porttitor augue</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>КРУПНАЯ БЫТОВАЯ ТЕХНИКА</h2>
+            <div class="wash">
+                <img src="img/wm.png">
+                <div class="tech_desc">
+                    <p>Перечень стандартных ремнотных работ в этой категории включает в себя:</p>
+                    <a class="button" id="button2">РАЗВЕРНУТЬ</a>
+                    <div class="line"></div>
+                    <ul id="tech_list2" class="tech_list">
+                        <li>- Замена частей</li>
+                        <li>- Sed condimentum lorem</li>
+                        <li>- Suspendisse hendrerit turpis</li>
+                        <li>- Lorem ipsum dolor</li>
+                        <li>- non porttitor augue</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>МЕЛКАЯ БЫТОВАЯ ТЕХНИКА</h2> 
+            <div class="vac">
+                <img src="img/vc.png">
+                <div class="tech_desc">
+                    <p>Перечень стандартных ремнотных работ в этой категории включает в себя:</p>
+                    <a class="button" id="button3">РАЗВЕРНУТЬ</a>
+                    <div class="line"></div>
+                    <ul id="tech_list3" class="tech_list">
+                        <li>- Замена частей</li>
+                        <li>- Sed condimentum lorem</li>
+                        <li>- Suspendisse hendrerit turpis</li>
+                        <li>- Lorem ipsum dolor</li>
+                        <li>- non porttitor augue</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <h2 id="map" class="cat_h2">КАРТА НАШИХ ФИЛИАЛОВ</h2>
+        <div class="line"></div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1lxzg57nuloBjlHJKCQnzJBsIrKVw--XA" width="100%" height="680"></iframe>
+        </div>
+        <div class="line"></div>
+        <h2 class="cat_h2" id="order">ЗАКАЗАТЬ</h2>
+        <div class="line"></div>
+        <div class="order">
+            <div class="cons">
+                <p>
+                    Для оформления заказа и дополнительной консультации оставьте нам свои данные, и с вами свяжется мастер в ближайшее время: 
+                </p>
+            </div>
+            <div class="form">
+                <p>Ваше имя:</p>
+                <input type="text">
+                <p>Тип техники, нуждающейся в ремонте:</p>
+                <input type="text">
+                <p>Ваш номер телефона:</p>
+                <input type="text">
+                <a class="submit">Отправить запрос</a>
+            </div>
+            <div class="num">
+                <p>для дополнительной консультации звоните по номерам:</p>
+                <p><span uk-icon="icon: receiver; ratio: 1.5"></span>+38(099)888-88-88</p>
+                <p><span uk-icon="icon: receiver; ratio: 1.5"></span>+38(099)888-88-77</p>
+                <p><span uk-icon="icon: receiver; ratio: 1.5"></span>+38(099)999-99-99</p>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer">
+            <p>© 2015-2020 Все права защищены законодательством Украины</p>
+        </div>
+    </div>
+</body>
+</html>
