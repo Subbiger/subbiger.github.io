@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Company</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="toposnova">
+            <div class="topnazv"> MyCompany </div>
+            <nav >
+                <ul class="topmenu">
+                    <li><a href="#header" uk-scroll>Home</a></li>
+                    <li><a href="#about" uk-scroll>about</a></li>
+                    <li><a href="#services" uk-scroll>services</a></li>
+                    <li><a href="#portfolio" uk-scroll>portfolio</a></li>
+                    <li><a href="#testimonials" uk-scroll>testimonials</a></li>
+                    <li><a href="#contact" uk-scroll>contact</a></li>
+                </ul>
+            </nav>  
+        </div>
+        <div class="intro">
+            <h1>welcome on <span>MyCompany</span></h1>
+            <p>We are a digital agency with <b>years of experience</b> and with <b>extraordinary people</b></p>
+        </div>
+        <div class="dropmenu">
+            <img src="img/menu.png">
+            <div uk-dropdown class="divdrop">
+                <ul class="topmenu2">
+                    <li><a href="#header" uk-scroll>Home</a></li>
+                    <li><a href="#about" uk-scroll>about</a></li>
+                    <li><a href="#services" uk-scroll>services</a></li>
+                    <li><a href="#portfolio" uk-scroll>portfolio</a></li>
+                    <li><a href="#testimonials" uk-scroll>testimonials</a></li>
+                    <li><a href="#contact" uk-scroll>contact</a></li>
+                </ul>   
+            </div>
+
+        </div> 
+    </header>   
+    <div id="about" class="about">
+        <div class="aboutcomp" uk-scrollspy="cls: uk-animation-slide-left; repeat: true"><img src="img/Site.jpg"/></div>
+        <div class="about_text" uk-scrollspy="cls: uk-animation-slide-right; repeat: true">
+            <div class="about_some_words"><p>some words <b>about us</b></p></div>
+            <div class="about_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at aspe- riores minus ad eaque maxime possimus .</div>
+            <div>
+                <ul class="about_list">
+                    <li><b>Mission - </b><i>We deliver uniqueness and quality</i></li>
+                    <li><b>Skills - </b><i>Delivering fast and excellent results</i></li>
+                    <li><b>Clients - </b><i>Satisfied clients thanks to our experience</i></li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div id="scroll_up">
+        <a href="#header" uk-scroll><img src="img/up.png"></a>
+    </div>  
+    <div class="our_team">
+        <div><h1>our team</h1></div>
+        <div class="lineclass"><div class="line"></div></div>
+        <div class="team_flex">
+            <div class="team_member"   uk-scrollspy="cls: uk-animation-fade; delay: 100; repeat: true">
+                <div><img src="img/Ellipse 6.png"></div>
+                <div><h2>Vlad Ivanov</h2>Designer</div>
+                <div><p>Do not seek to change what has come before. Seek to create that which has not.</p></div>
+            </div>
+            <div class="team_member"  uk-scrollspy="cls: uk-animation-fade;delay: 100; repeat: true">
+                <div><img src="img/Ellipse 6.png"></div>
+                <div><h2>Bogdan Makarov</h2>Manager</div>
+                <div><p>Do not seek to change what has come before. Seek to create that which has not.</p></div>
+            </div>
+            <div class="team_member"  uk-scrollspy="cls: uk-animation-fade; delay: 100; repeat: true">
+                <div><img src="img/Ellipse 6.png"></div>
+                <div><h2>Pavel Konov</h2>Copywriter</div>
+                <div><p>Do not seek to change what has come before. Seek to create that which has not.</p></div>
+            </div>
+            <div class="team_member"  uk-scrollspy="cls: uk-animation-fade; delay: 100; repeat: true">
+                <div><img src="img/Ellipse 6.png"></div>
+                <div><h2>Max Belov</h2>SEO</div>
+                <div><p>Do not seek to change what has come before. Seek to create that which has not.</p></div>
+            </div>    
+        </div>
+    </div>
+    <div id="services" class="our_services">
+        <div><h1>Our services</h1></div>
+        <div class="lineclass"><div class="line"></div></div>
+        <div id="mnogo_teksta"><p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+             Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque 
+             maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum
+               ab iusto assumenda velit excepturi porro ipsa tenetur.
+            </i></p>
+        </div>
+        <div class="services_flex" uk-scrollspy="cls: uk-animation-scale-up; target: > div; delay: 350; repeat: true">
+            <div class="service">
+                <div class="service_pic"><h2><img src="img/Forma 1.png"></h2><h6><img src="img/comp.png"></h6></div>
+                <div><p><h2>WEB DESIGN</h2></p></div>
+                <div><h5>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5></div>
+            </div>
+            <div class="service">
+                <div class="service_pic"><h2><img src="img/Forma 1.png"></h2><h7><img src="img/smart.png"></h7></div>
+                <div><p><h2>MOBILE APPS</h2></p></div>
+                <div><h5>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5></div>
+            </div>
+            <div class="service">
+                <div class="service_pic"><h2><img src="img/Forma 1.png"></h2><h8><img src="img/camera.png"></h8></div>
+                <div><p><h2>PHOTOGRAPHY</h2></p></div>
+                <div><h5>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5></div>
+            </div>
+            <div class="service">
+                <div class="service_pic"><h2><img src="img/Forma 1.png"></h2><h9><img src="img/megaphone.png"></h9></div>
+                <div><p><h2>MARKETING</h2></p></div>
+                <div><h5>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</h5></div>
+            </div>
+        </div>
+    </div>
+    <div class="clients">
+        <div><h1>SOME OF <b>OUR CLIENTS</b></h1></div>
+        <div class="lineclass"><div class="line"></div></div>
+        <div><img src="img/Layer 64.png"></div>
+    </div>
+    <div id="portfolio" class="our_work">
+        <div><h1>TAKE A LOOK AT <b>OUR WORK</b></h1></div>
+        <div class="lineclass"><div class="line"></div></div>
+        <div id="mnogo_teksta"><p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque 
+                maxime possimus cum ab iusto assumenda velit excepturi porro ipsa tenetur.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Doloribus ex quidem maiores ullam quis, at asperiores minus ad eaque maxime possimus cum
+                  ab iusto assumenda velit excepturi porro ipsa tenetur.
+               </i></p>
+        </div>
+        <div class="work_flex" uk-lightbox="animation: slide">
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 83.jpg" data-caption="Image 1">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 83.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 83.jpg" data-caption="Image 2">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 83.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 83.jpg" data-caption="Image 3">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 83.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 83.jpg" data-caption="Image 4">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 83.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 77.jpg" data-caption="Image 5">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 77.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 77.jpg" data-caption="Image 6">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 77.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 77.jpg" data-caption="Image 7">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 77.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 77.jpg" data-caption="Image 8">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 77.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 82.jpg" data-caption="Image 9">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 82.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 82.jpg" data-caption="Image 10">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 82.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 82.jpg" data-caption="Image 11">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 82.jpg">
+                </a>
+            </div>
+            <div class="uk-transition-toggle" tabindex="0">
+                <a href="img/Layer 82.jpg" data-caption="Image 12">
+                    <img class="uk-transition-scale-up uk-transition-opaque" src="img/Layer 82.jpg">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="testimonials" class="testim">
+        <div><h1><b>OUR clients'</b> testimonials </h1></div>
+        <div class="lineclass"><div class="line"></div></div>
+        <div><h4>THIS BOOK IS A TREATISE ON THE THEORY OF ETHICS, VERY POPULAR DURING THE RENAISSANCE. THE FIRST
+                LINE OF LOREM IPSUM, "LOREM IPSUM DOLOR SIT AMET..", COMES FROM A LINE IN SECTION 1.10.32.</h4></div>
+        <div><h5><b>Dean Martin</b>, CEO Acme Inc.</h5></div>
+    </div>
+    <div id="contact" class="contact">
+        <div><h1> contact us </h1></div>
+        <div class="lineclass"><div class="line"></div></div>
+        <div id="mnogo_teksta2"><p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus ex quidem maiores ullam quis, at aspe-
+                riores minus ad eaque maxime possimus cum ab iusto assumenda velit excepturi porro ipsa
+                tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </i></p>
+        </div>
+
+        <div class="contact_grid">
+            <div class="grid_name">Name<h5>*</h5></div>
+            <div class="grid_email">Email Address<h5>*</h5></div>
+            <div class="grid_massage">Message<h5>*</h5></div>
+            <div class="textbox1"><input type="text1"></div>
+            <div class="textbox2"><input type="text2"></div>
+            <div class="textbox3"><input type="text3"></div>
+            <div class="send"><button type="button" class="button1" uk-toggle="target: #send"><b>SEND</b></button></div>
+        </div>    
+        <div id="send" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <h2 class="uk-modal-title"><b> Your message has been sent!</b></h2>
+                <p class="uk-text-right">   
+                    <button class="uk-modal-close uk-button uk-button-default" type="button">OK</button>
+                </p> 
+            </div>
+        </div>
+    </div>
+    <div class="nav_bottom">
+        <div><a href="http://www.facebook.com" target="blank_"><img src="img/facebook.png"></a></div>
+        <div><a href="http://www.twitter.com" target="blank_"><img src="img/twitter.png"></a></div>
+        <div><a href="http://www.google.com" target="blank_"><img src="img/google.png"></a></div>
+        <div><a href="http://www.linkedin.com" target="blank_"><img src="img/linkedin.png"></a></div>
+        <div><a href="http://www.dribbble.com" target="blank_"><img src="img/dribbble.png"></a></div>
+    </div>
+</body>
+</html>

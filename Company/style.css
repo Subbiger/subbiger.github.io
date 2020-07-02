@@ -1,0 +1,695 @@
+body{
+    font-family: Open Sans, sans-serif;
+    background-color: white;
+}
+#scroll_up{
+    display: none;
+    position: fixed;
+    opacity: 0.5;
+    right: 5px;
+    bottom: 5px;
+    min-width: 130px;
+    min-height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+}
+
+.dropmenu{
+    display:none;
+    position: absolute;
+    top: 80px;
+    left: 5px;
+    min-width: 130px;
+    min-height: 130px;
+    max-width: 130px;
+    max-height: 130px;
+}
+#header{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: black;
+    width: 100%;
+}
+.topnazv{
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: left;
+    margin: 20px;   
+    position: relative;
+    left: 100px;
+}
+.toposnova{
+    text-transform: uppercase;
+    height: 100px;
+    width: 100%;
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;   
+    justify-content: space-between;
+}   
+.topmenu2 li{
+    text-transform: uppercase;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+.divdrop{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.topmenu2{
+    background-color: black;
+    display: flex;  
+    flex-wrap: nowrap;
+    font-size: 13px;
+    list-style-type: none;  
+    flex-direction: column;
+    height: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+  
+}
+.topmenu2 a:hover{
+border-bottom: 2px solid orange;
+}
+.topmenu2 a{
+    text-decoration: none;
+    font-weight: 700;
+	padding-bottom: 10px;
+    margin: 5px 15px 5px 15px;   
+}
+
+.topmenu{
+    display: flex;  
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 35px;
+    font-size: 13px;
+    list-style-type: none;
+    padding: 20px auto 0px auto;   
+  
+}
+.topmenu a:hover{
+border-bottom: 2px solid orange;
+}
+.topmenu a{
+    text-decoration: none;
+    font-weight: 700;
+	padding-bottom: 10px;
+    margin: 5px 15px 5px 15px;   
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: white;
+}
+
+.intro b{
+    font-weight: bold;
+}
+
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1{
+    color: darkgray;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 200px 30px 10px 30px;
+}
+
+.intro p{
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+    margin: 0px 30px 400px 30px;
+}
+
+.intro h1 span{
+    font-weight: bold;
+    color: orange;
+}
+.about b{
+    font-weight: bold;
+}
+
+.about{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+}
+
+.aboutcomp img{
+    height: 400px;
+}
+.aboutcomp{
+    margin: 100px 100px 100px 100px;
+}
+
+.about_some_words{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.about_some_words p{
+    display: inline;
+    border-bottom: 4px solid orange;  
+    padding-bottom: 10px; 
+}
+
+.about_desc{
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.about_list li{
+    margin-bottom: 10px;
+}
+
+.about_list{
+    margin-left: 20px;
+    font-size: 16px;
+    color: gray;
+    list-style-image: url(img/dot.png);
+}
+
+.about_text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width:405px;
+}
+
+.our_team img{
+    min-width: 128px;
+}
+
+.our_team h1{
+    color: #fff;
+    padding:80px 30px 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.our_team{
+    background-color: black;
+    color: #fff;
+    margin: 0px;
+    padding: 70px;
+    text-align: center;
+}
+
+.line{
+    position: relative;
+    bottom: 10px;
+    right: 0px;
+    background-color: orange;
+	height:4px;
+	width:88px;
+	margin:0px;
+}
+
+.lineclass{
+    display: flex;
+    justify-content: center;   
+}
+
+.team_flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+    padding: 80px 80px 30px 80px;
+    margin-bottom: 100px;
+}
+
+.team_member img{
+    min-height: 128px;
+    min-width: 127px;
+    padding-top: 30px;
+    margin-bottom: auto;
+}
+
+.team_member{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width:300px;
+    height: 300px;
+    margin: 30px 10px 30px 10px;
+}
+.team_member p{
+    padding-top: 30px;  
+}
+.team_member h2{
+    padding-top: 30px;  
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.our_services h1{
+    padding:80px 30px 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.our_services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.services_flex{
+    padding-left: 130px;
+    padding-right: 130px;   
+    padding-bottom: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;  
+    align-content: center;
+}
+
+.service h2{
+    margin: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.service h5{
+    font-weight: 100;
+    color: gray;
+    text-align: center;
+}
+.service h6 img{
+    position: relative;
+    bottom: 128px;
+    left: 35px;
+    min-width: 55px;
+    min-height: 55px;
+}
+
+.service h7 img{
+    position: relative;
+    bottom: 110px;
+    left: 45px;
+    min-width: 34px;
+    min-height: 55px;
+}
+.service h8 img{
+    position: relative;
+    bottom: 108px;
+    left: 33px;
+    min-width: 57px;
+    min-height: 47px;
+}
+.service h9 img{
+    position: relative;
+    bottom: 112px;
+    left: 38px;
+    min-width: 48px;
+    min-height: 55px;
+}
+.service{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 20px 0px 20px;
+
+}
+.service_pic{
+    margin: 30px 0px 30px 0px;
+    height:125px;
+    width: 125px;
+}
+.service_pic h2{
+    min-height: 125px;
+    min-width: 125px;
+}
+
+#mnogo_teksta{
+    padding: 50px 190px 0px 190px;
+    color:rgb(90, 90, 90);
+    text-align:center;
+}
+
+.clients{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.clients h1{
+    color: #fff;
+    padding:80px 30px 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.clients img{
+    height: 30px;
+    margin: 60px auto 100px;
+}
+
+.our_work h1{
+    padding:80px 30px 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.our_work{
+    width: 100%;
+}
+
+.work_flex{
+    margin-bottom: 100px;
+    padding-top: 100px;
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+.work_flex div{
+    padding:20px;
+}
+
+.testim{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.testim h1{
+    color: #fff;
+    padding:80px 30px 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+}
+.testim h4{
+    padding:60px 350px 30px 350px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    color: rgb(218, 218, 218);
+}
+.testim h5{
+    color: darkgray;
+    padding:0px 30px 100px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contact h1{
+    padding:80px 30px 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.contact{
+    width: 100%;
+}
+
+.contact_grid h5{
+    color:red;
+    display: inline;
+}
+
+.contact_grid{
+    width: auto;
+    padding: 80px 375px 0px 375px;
+    display: grid;
+    grid-template-columns: auto-fit (360px 30px 360px);
+    grid-template-rows: 30px 30px 30px 30px 200px 30px 30px;
+    grid-template-areas: 
+    'name . email'
+    'textbox1 . textbox2'
+    '. . .'
+    'massage . .'
+    'textbox3 textbox3 textbox3'
+    '. . .'
+    '. . button';
+    align-items: end;
+    justify-items: start;
+    margin-bottom: 100px;
+}
+
+.grid_name{
+    color:rgb(90, 90, 90);
+    width: 100%;
+    height: 100%;
+    grid-area: name;
+    margin: 10px;
+}
+
+.grid_email{
+    color:rgb(90, 90, 90);
+    width: 100%;
+    height: 100%;
+    grid-area: email;
+    margin: 10px;
+}
+
+.grid_massage{
+    color:rgb(90, 90, 90);  
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    grid-area: massage;
+}
+
+#mnogo_teksta2{
+    padding: 40px 365px 0px 365px;
+    color:rgb(90, 90, 90);
+    text-align:center;
+}
+
+.textbox1{
+    grid-area: textbox1;
+    justify-self: stretch;
+    align-self: stretch;
+    resize: none;
+}
+.textbox2{
+    grid-area: textbox2;
+    justify-self: stretch;
+    align-self: stretch;
+    resize: none;
+}
+.textbox3{
+    grid-area: textbox3;
+    justify-self: stretch;
+    align-self: stretch;
+    resize: none;
+}
+input[type=text1]{
+    width: 100%;
+    height: 100%;
+}
+input[type=text2]{
+    width: 100%;
+    height: 100%;
+}
+input[type=text3]{
+    width: 100%;
+    height: 100%;
+}
+
+.send{
+    grid-area: button;
+    justify-self: end;
+    align-self: stretch;
+    resize: none;
+}
+
+.button1{
+    width: 170px;
+    height: 40px;
+    background-color: rgb(253, 165, 63);
+    border: none;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav_bottom{
+    padding: 20px 0px 20px 0px;  
+    background-color: rgb(32, 32, 32);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-content: center;
+}
+
+.nav_bottom div{
+    margin: 0px 10px 0px 10px;
+}
+  
+@media all and (max-width: 1000px){
+    .toposnova{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .topnazv{
+        position: relative;
+        left: 0;
+    }
+    .topmenu_flex{
+        align-items: flex-start;
+        margin-right: 0px;
+    }
+
+}
+@media all and (max-width: 1200px){
+    .about{
+        flex-direction: column;
+    }
+
+    .aboutcomp{
+        margin: 0px 30px 100px 30px;
+    }
+    .team_flex{
+        padding: 80px 0px 30px 0px;
+        flex-direction: column;
+    }
+    .our_team{
+        padding: 30px;
+    }
+    .team_member{
+        width: 100%;
+        flex-direction: row;
+    }
+    .team_member p{
+        padding: 30px 0px 30px 0px;
+    }
+    .clients img{
+    height: 20px;
+    }
+    .services_flex{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .contact_grid{
+        padding: 80px 20px 20px 20px;
+    }
+    #mnogo_teksta{
+        padding: 0px 20px 0px 20px; 
+    }  
+    #mnogo_teksta2{
+        padding: 0px 20px 0px 20px; 
+    }  
+}
+@media all and (max-width: 1400px){ 
+    .testim h4{
+        padding:10px 20px 30px 20px;
+    }
+}
+@media all and (max-width: 900px){  
+
+    .services_flex{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+    }
+    .service{
+        padding-bottom: 40px;
+        flex-direction: row ;
+        width: 100%;
+    }
+    .service_pic{
+        padding-right: 40px;    
+    }
+    .clients img{
+        height: 10px;
+    }
+}
+
+@media all and (max-width: 600px){
+    .toposnova{
+        justify-content: left;
+    }
+    .toposnova :last-child{
+        width: inherit;
+    }
+    .topmenu{
+        display: none;
+    }
+    .about img{
+        height:270px;
+    }
+    .about_text{
+        width: 390px;
+    }
+    .team_flex{
+        margin: 0px 0px 0px 0px;
+        align-content: flex-start   ;
+    }
+    .team_member{
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width:100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .team_member p{
+        margin: 20px 0px 20px 0px;
+    }
+    .our_team{
+        padding: 0px;
+    }
+    .service{
+        margin: 70px 0px 40px 0px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .dropmenu{
+        display: inline;    
+    }
+}
+
