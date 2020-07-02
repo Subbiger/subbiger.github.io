@@ -2,8 +2,6 @@ html{
     font-family: Play, monospace;
     margin: 0;
     padding: 0;
-}
-body{
     max-width: 1920px;
     min-width: 1500px;
     margin: 0 auto;
@@ -25,7 +23,7 @@ h2{
 }
 .header{
     margin: 0 auto;
-    background: rgba(184, 184, 184, 0.8);
+    background:linear-gradient(to bottom,rgba(0, 0, 0, 0.76)50%,rgba(0, 0, 0, 0.226)100%);
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
@@ -52,6 +50,7 @@ h2{
 .logo h1{
     font-family: 'Play', monospace;
     font-weight: 700;
+    color: white;
 }
 .number{
     color: black;
@@ -59,22 +58,23 @@ h2{
 }
 .menu_list{
     margin-right:100px;
-    display: flex;
-    flex-flow: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
 }
 .menu_list a{
     font-size: 1.5em;
     font-weight: 700;
     margin: 20px 20px;
     text-transform: uppercase;
+    color: white;   
+}
+.menu_list a:hover{
+    border-top: white 3px solid;
 }
 
 .back{
     width: 100%;
     height: 846px;
     background: url(img/1.jpg) no-repeat center;
+    background-size: 2000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,7 +87,7 @@ h2{
 .top{
     width: 100%;
     height: 400px;
-    background: rgba(0, 0, 0, 0.534);
+    background: rgba(0, 0, 0, 0.884);
     text-align: center;
     display: flex;
     justify-content: center;
