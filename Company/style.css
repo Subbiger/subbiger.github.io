@@ -661,6 +661,7 @@ input[type=text3]{
     }
     .about img{
         height:270px;
+        margin-top: 100px;
     }
     .about_text{
         width: 390px;
