@@ -201,7 +201,7 @@ h2{
 @media all and (max-device-width: 900px){
     body{
         min-width: 750px;
-        max-width: 900px;
+        max-width: 1000px;
     }
     .header{
         flex-flow: column;
