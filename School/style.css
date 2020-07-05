@@ -9,6 +9,7 @@ body{
     margin: 0 auto;
     font-size: 1.5em;
     max-width: 1920px;
+    min-width: 1500px;
 }
 a, a:visited, a:hover{
     color:rgb(87, 87, 87);
@@ -89,15 +90,18 @@ h2{
     display: flex;
     flex-flow: column;
     flex-wrap: nowrap;
+    overflow: hidden;
 }
 .lang{
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
+    align-items: center;
     margin: 100px auto;
 }
 .lang img{
-    height: 200px;
+    height: 100%;
+    width: 20%;
     margin-right: 100px;
 }
 .lang h2{
@@ -193,4 +197,54 @@ h2{
     width: 100px;
     display: none;
     opacity: 0.5;
+}
+@media all and (max-width: 900px){
+    body{
+        min-width: 750px;
+        max-width: 900px;
+    }
+    .header{
+        flex-flow: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu{
+        margin: 0 auto;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .logo img{
+        margin: 10px;
+    }
+    .about img{
+        display: none;
+    }
+    .menu a:hover{
+        border-bottom:none;
+    }
+    h2{
+        font-size: 2em;
+        margin: 50px auto;
+    }
+    .lang img{
+        margin-right: 20px;
+    }
+    .lang{
+        margin: 50px auto;
+    }
+    .contact{
+        padding: 20px;
+    }
+    .num{
+        align-items: center;
+    }
+    .gallery div{
+        margin: 20px;
+    }
+    .gallery img{
+        width: 150px;
+        height: 150px;
+    }
 }
