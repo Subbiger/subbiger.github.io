@@ -46,6 +46,7 @@ a:hover{
     font-family: 'El Messiri', sans-serif;
     color: rgb(0, 0, 0);
     margin: 0;
+    white-space: nowrap;;
 }
 h2{
     font-family: 'El Messiri', sans-serif;
