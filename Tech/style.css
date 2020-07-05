@@ -9,6 +9,7 @@ html{
 .main{
     margin: 0 auto;
     width: 100%;
+    overflow: hidden;
 }
 a, a:visited, a:hover{
     color:rgb(58, 58, 58);
@@ -22,6 +23,9 @@ h2{
     font-weight: 700;
 }
 .header{
+
+    max-width: 1920px;
+    min-width: 1500px;
     margin: 0 auto;
     background:linear-gradient(to bottom,rgba(0, 0, 0, 0.76)50%,rgba(0, 0, 0, 0.226)100%);
     display: flex;
@@ -29,7 +33,6 @@ h2{
     flex-wrap: nowrap;
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -51,10 +54,6 @@ h2{
     font-family: 'Play', monospace;
     font-weight: 700;
     color: white;
-}
-.number{
-    color: black;
-    margin: 20px 0 0 290px;
 }
 .menu_list{
     margin-right:100px;
@@ -129,12 +128,14 @@ h2{
 }
 .para img{
     margin: -30px 70px 40px 150px;
-    height: 200px;
+    height: 100%;
+    width: 10%;
 }
 .para2{
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
+    margin-bottom: 30px;
 }
 .para2 p{
     margin: 0 70px 0 0;
@@ -142,7 +143,8 @@ h2{
 }
 .para2 img{
     margin: -20px 100px 40px 100px;
-    height: 200px;
+    height: 100%;
+    width: 10%;
 }
 .para2h2{
     text-align: end;
@@ -274,4 +276,148 @@ h2{
     margin: 100px 0 0;
     background: gray;
     padding: 50px 40px 10px 40px;
+}
+.scroll_up{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    min-height: 100px;
+    max-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    display: none;
+    opacity: 0.5;
+}
+@media all and (max-device-width: 900px){
+    p{
+        font-size: 2.5em;
+    }
+    html{
+        min-width: 750px;
+        max-width: 1000px;
+    }
+    .header{
+        position: relative;
+        min-width: 750px;
+        max-width: 1000px;
+        align-items: center;
+        flex-flow: column;
+        flex-wrap: nowrap;
+    }
+    .logo{
+        justify-content: center;
+        margin: 0;
+    }
+    .logo img{
+        margin: 10px 40px 0 0;
+    }
+    .menu_list{
+        margin: 30px 0 0;
+        text-align: center;
+    }
+    .menu_list a{
+        font-size: 2.2em;
+    }
+    .menu_list a:hover{
+        border: none;
+    }
+    .verh{
+        background: url(img/1.jpg) no-repeat center;
+        background-size: 2000px;
+    }
+    .back{
+        background: none;
+    }
+    .order{
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-size: 0.8em;
+    }
+    .cons{
+        width: 100%;
+        text-align: center;
+    }
+    .num{
+        text-align: center;
+    }
+    .order a{
+        font-size: 2em;
+    }
+    .order input{
+        width: 100%;
+    }
+    .para{
+        flex-flow: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .para2{
+        align-items: center;
+        flex-flow: column;
+        flex-wrap: nowrap;
+    }
+    .para p{
+        margin: 0;
+    }
+    .parah2{
+        margin: 20px;
+        font-size: 4em;
+        text-align: center;
+    }
+    .para2h2{
+        text-align: center;
+        margin: 20px;
+        font-size: 4em;
+    }
+    .para2 p{
+        margin: 0;
+    }
+    .para img{
+        margin: 20px;
+        width: 30%;
+    }
+    .para2 img{
+        margin: 20px;
+        width: 30%;
+    }
+    .techs h2{
+        margin: 50px 0;
+        text-align: center;
+    }
+    .techs img{
+        margin: 20px;
+    }
+    .button{
+        font-size: 2em;
+    }
+    .techs p{
+        text-align: center;
+    }
+    .tech_list{
+        font-size: 2em;
+    }
+    .comp{
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .wash{
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .vac{
+        flex-flow: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .scroll_up{
+        left: 50px;
+        bottom: 100px;
+        min-height: 150px;
+        max-height: 150px;
+        min-width: 150px;
+        max-width: 150px;
+    }
 }
