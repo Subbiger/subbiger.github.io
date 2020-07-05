@@ -198,7 +198,7 @@ h2{
     display: none;
     opacity: 0.5;
 }
-@media all and (max-width: 900px){
+@media all and (max-device-width: 900px){
     body{
         min-width: 750px;
         max-width: 900px;
