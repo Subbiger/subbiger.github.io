@@ -344,6 +344,7 @@ h2{
         text-align: center;
     }
     .form{
+        align-items: center;
         width: 100%;
         padding-left: 150px;
         padding-right: 150px;
@@ -355,7 +356,7 @@ h2{
         font-size: 2em;
     }
     .order input{
-        width: 100%;
+        width: 70%;
         font-size: 2em;
     }
     .para{
