@@ -1,0 +1,403 @@
+html{
+    color:black;
+}
+a, a:visited, a:hover{
+    color:rgb(109, 109, 109);
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+hr{
+    width: 73%;
+    margin: 25px auto;
+}
+.header{
+    height: 100px;
+    background: rgba(255, 255, 255, 0.9 );
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    border: rgb(228, 228, 228) 1px solid;
+}
+.logo{
+    margin: 10px 0 0 50px;
+}
+.logo_text{ 
+    margin: 20px 0 0 0 ;
+    font-family:'Anton', sans-serif;
+    font-size: 1.3em;
+    color: black;
+}
+.menu{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 0 0;
+}
+.menu a{
+    font-size: 1.1em;
+    margin: 10px;
+}
+.main_intro{
+    background: url(img/shipbg.jpg) no-repeat;
+    background-position: right -250px top -200px;
+    background-attachment: fixed;
+    height: 800px;
+}
+.footer{
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9 );
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: rgb(228, 228, 228) 1px solid;
+}
+.footer p{
+    margin: 15px 0px 0px 30px;
+    font-size: 1.05em;
+}
+.history{
+    width: 75%;
+    margin: 100px auto 0;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+.subhistory{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+.subhistory div{
+    display: flex;
+    flex-flow: column;
+}
+.subhistory div span{
+    margin: 5px;
+}
+.history img{
+    height: 467px;
+    margin: 70px 20px 20px 20px;
+}
+.about_us h3{
+    font-size: 2em;
+}
+.today{
+    width: 75%;
+    margin: 0px auto 0;
+    text-align: center;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.today div{
+    margin: 20px;
+}
+.values{
+    width: 75%;
+    margin: 0px auto 0;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.values img{
+    height: 290px;
+    margin: 20px 20px 20px 300px;
+}
+.values div{
+    display: flex;
+    flex-flow: column;
+}
+.values div span{
+    margin: 10px;
+}
+.goals{
+    width: 75%;
+    margin: 0px auto 0;
+    text-align: center;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.goals div{
+    display: flex;
+    flex-flow: column;
+}
+.goals div span{
+    margin: 10px;
+}
+.goals img{
+    height: 300px;
+    margin: 20px 80px 20px 200px;
+}
+.message{
+    width: 75%;
+    margin: 0px auto 100px;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    padding-right: 400px;
+}
+.services{
+    width:65%;
+    margin: 0 auto 200px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.comm{
+    text-align: center;
+    height: 500px;
+    width: 280px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border: rgb(228, 228, 228) 1px solid;
+}
+.services h3{
+    font-size: 1.1em;
+    margin: 20px;
+}
+.comm span{
+    margin: 10px;
+}
+.tech{
+    text-align: center;
+    height: 500px;
+    width: 280px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border: rgb(228, 228, 228) 1px solid;
+}
+.crew{
+    text-align: center;
+    height: 500px;
+    width: 280px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border: rgb(228, 228, 228) 1px solid;
+}
+.services a{
+    margin-bottom: 20px;
+}
+.services span{
+    margin: 0 20px;
+}
+#comm_more, #tech_more, #crew_more{
+    z-index: 5;
+}
+.fleet{
+    width: 80%;
+    margin: 0 auto;
+}
+.fleet th{
+    font-size: 1.2em;
+    color: black;
+    background: rgb(192, 192, 192);
+    font-weight: 500;
+}
+.fleet_links{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+}
+.fleet_links .uk-icon-button{
+    border-radius: 0%;
+    color: black;
+    margin: 0;
+}
+.fleet_links a{
+    height: 40px;
+    width: 40px;
+}
+.fleet_links a:first-child{
+    background: rgb(112, 157, 255);
+}
+.fleet_links a:last-child{
+    background: rgb(44, 196, 44);
+}
+.fleet_links .uk-icon-button:first-child{
+    border-top-left-radius:7px;
+    border-bottom-left-radius: 7px;
+}
+.fleet_links .uk-icon-button:last-child{
+    border-top-right-radius:7px;
+    border-bottom-right-radius: 7px;
+}
+#fleet{
+    text-align: center;
+    margin: 0 auto 60px;
+    font-weight: bolder;
+}
+#service{
+    text-align: center;
+    margin: 0 auto 60px;
+    font-weight: bolder;
+}
+#about{
+    text-align: center;
+    margin: 50px auto 0px;
+    font-weight: bolder;
+}
+#policies{
+    text-align: center;
+    margin: 150px auto 60px;
+    font-weight: bolder;
+}
+#affiliates{
+    text-align: center;
+    margin: 150px auto 60px;
+    font-weight: bolder;
+}
+#contact{
+    text-align: center;
+    margin: 150px auto 60px;
+    font-weight: bolder;
+}
+.drop{
+    padding: 20px 0;
+    width: 320px;
+    border-radius: 5px;
+    border: rgb(189, 189, 189) solid 1px;
+    color: black;
+    box-shadow: none;
+}
+.drop li:hover{
+    background: rgb(224, 224, 224);
+}
+.drop ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+.policies{
+    width: 85%;
+    background: rgb(224, 224, 224);
+    margin: 0 auto;
+    padding: 50px;
+}
+.policies h3{
+    font-size: 3.5em;
+}
+.policies h4{
+    margin: 10px 10px -5px;
+    font-size: 1.4em;
+}
+.policies p span{
+    display: inline-block;
+}
+.policies p{
+    font-size: 1.2em;
+    margin: 15px;
+}
+.policies span{
+    display: block;
+    font-size: 1em;
+    margin: 20px 0px 20px 50px;
+}
+.policies div{
+    margin-bottom: 60px;
+}
+.affiliates{
+    width: 60%;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.aff_logo{
+    height: 250px;
+    margin-right: -100px;
+}
+.contact{
+    width: 80%;
+    margin: 0 auto 100px;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+.map{
+    background:rgb(224, 224, 224) ;
+    padding: 50px;
+    border-radius: 5px;
+}
+.map h3{
+    font-size: 3.5em;
+}
+.map p{
+    font-size: 1.3em;
+}
+.form{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    margin-left: 30px;
+}
+.send{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background:rgb(224, 224, 224) ;
+    width: 100px;
+    padding: 30px;
+}
+.send p{
+    font-size: 1.8em;
+}
+.form_area{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    align-items:flex-start;
+    padding:20px 30px;
+    min-width: 400px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.form_area p{
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+.form_area input,.form_area textarea{
+    width: 300px;
+}
+.form_area a{
+    margin: 30px 0;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 1em;
+    background: rgb(121, 121, 121);
+    padding:8px 15px;
+    border-radius: 5px;
+}

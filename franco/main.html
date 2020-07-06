@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="img/logo.png"></div>
+        <div class="logo_text"><p>Commercial & Ship Management Services</p></div>
+        <div class="menu">
+            <a href="#top" uk-scroll>HOME</a>
+            <a href="#about" uk-scroll>ABOUT US</a>
+            <a href="#service" uk-scroll>SERVICES</a>
+            <a href="#fleet" uk-scroll>FLEET</a>
+            <div class="uk-inline">
+                <a href="">POLICIES<span uk-icon="icon: triangle-down"></span></a>
+                <div uk-dropdown="mode: click" class="drop">
+                    <ul>
+                        <li><a href="#occup" uk-scroll>Occupational Health-Drug & Alcohol</a></li>
+                        <li><a href="#safety" uk-scroll>Safety & Environmental</a></li>
+                        <li><a href="#training" uk-scroll>Training</a></li>
+                        <li><a href="#security" uk-scroll>Security</a></li>
+                        <li><a href="#quality" uk-scroll>Quality</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#affiliates" uk-scroll>AFFILIATES</a>
+            <a href="#contact" uk-scroll>CONTACT</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main_intro" id="top">
+        </div>
+        <h2  id="about">ABOUT US</h2>
+        <div class="about_us" id="about">
+            <div class="history uk-card uk-card-default  uk-card-body">
+                <div class="subhistory"><img src="img/about1.png"><div><p><h3 class="uk-card-title">HISTORY</h3>
+                    <span> Franco Shipping Group was founded by Dr. Achilles Frangistas in 1948. He acquired his first ship in 1951 and by the start of the sixties he had managed to establish a healthy and expanding fleet whose performance was further enhanced through the addition of a substantial number of dry cargo ships, including fifteen war-built Liberty ships.</span>
+                    <span>By the mid-sixties, Franco had gained substantial expertise concerning the international shipping business, enabling it to engage in new building projects. In a pioneering agreement with the USSR, a series of ten ships of various types were constructed at the Nikolayev Shipyards and subsequently came under the group's management.</span>
+                    <span>The rapid evolution of Franco's maritime activities did not cease there. During the following five years, 20 dry cargo ships from the second hand market joined its fleet before Franco took delivery of two SD-14 ships built at Hellenic Shipyards, Scaramanga in 1971.</span>
+                    <span>After a successful period of two and a half decades in dry cargo operation, the company's principals decide to start diversifying to include the bulk carrier section in order to meet the rapidly changing trends in world shipping. To underline itscommitment, a 26000dwt bulker was ordered and delivered from Namura shipyard in Japan in 1976. This was followed by numerous purchases of bulk carriers form the second-hand market over the following twenty-five years.</span></p></div>
+                </div>
+                <div class="endhistory"><p>Today, Franco Compania Naviera S.A., is the operator of a continuously growing fleet of modern bulk carriers.</p></div>  
+            </div>
+            <hr>
+            <div class="today uk-card uk-card-default  uk-card-body">
+                <img src="img/about2.jpg">
+                <div>
+                    <p>
+                        <h3 class="uk-card-title">COMPANY TODAY</h3>
+                        With its history in global maritime activities exceeding half a century,
+                        Franco Compania Naviera S.A. today offers commercial, operational, technical and crewing services on behalf of 
+                        international owners and is widely acknowledged as one of the most respected traditional ship-management companies.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="values uk-card uk-card-default  uk-card-body">
+                <div>
+                    <h3>
+                        OUR VALUES
+                    </h3>
+                    <span>Commitment of the highest standards of ethics, quality and safety.</span>
+                    <span>Tradition of excellence.</span>
+                    <span>Family stewardship of a world-class business.</span>
+                    <span>Honoring benchmark relationships with:</span>
+                    <span>Employees</span>
+                    <span>Suppliers</span>
+                    <span>Brokers</span>
+                    <span>Bunkers</span>
+                    <span>Service Providers</span>
+                    <span>Charterers</span>
+                </div>
+                <img src="img/about3.jpg">
+            </div>
+            <hr>
+            <div class="goals uk-card uk-card-default  uk-card-body">
+                <div>
+                    <h3>OUR GOALS</h3>
+                    <span>To always be ethical and performing according to the highest industry standards</span>
+                    <span>To have the highest quality, most professional employees in the industry and to be seen as the employer of choice.</span>
+                    <span>To be viewed as the company of choice for investors and joint venture partners.</span>
+                    <span>To be world-class stewards of our family business, committed to hard work, loyalty to our employees, partners and customers.</span>
+                    <span>To develop world-class professional management and leadership talent.</span>
+                    <span>To manage a progressive growth over the next ten years.</span>
+                    <span>To consistently provide above average results to our partners and investors.</span>
+                </div>
+                <img src="img/about4.png">
+            </div>
+            <hr>
+            <div class="message uk-card uk-card-default  uk-card-body">
+                <h3>MESSAGE FROM THE MANAGEMENT</h3>
+                <span>After experience gained over the last fifty years in the shipping industry, Franco Compania Naviera S.A. strongly 
+                    believes that it is no longer enough for shipping to be empirically organized and administrated.
+                     The demands of the future will only be met by increased technical knowledge, insight and innovation.</span>
+                <span>Franco continues to be guided by its experience and its commitment to
+                     remain at the forefront of the shipping industry for generations to come. </span>
+            </div>
+        </div>
+        <h2 id="service">SERVICES</h2>
+        <div class="services" >
+            <div class="comm">
+                <img src="img/serv1.png">
+                <h3>COMMERCIAL MANAGEMENT</h3>
+                <span>The core of the company the Chartering and Operations departments,
+                     offer to its clients full range of professional and competitive services.</span>
+                <a class="more" href="#comm_more" uk-toggle>More...</a>
+            </div>
+            <div class="tech">
+                <img src="img/serv2.png">
+                <h3>TECHNICAL MANAGEMENT</h3>
+                <span>The company offers full technical management via its highly
+                     experienced Technical, Quality & Safety and Purchasing Departments.</span>
+                <a class="more" href="#tech_more" uk-toggle>More...</a>
+            </div>
+            <div class="crew">
+                <img src="img/serv3.png">
+                <h3>CREWING SERVICES</h3>
+                <span>The Crew Department is responsible for ensuring that each vessel is manned with capable
+                     and experienced seafarers always in accordance with national and international requirements and regulations.</span>
+                <a class="more" href="#crew_more" uk-toggle>More...</a>
+            </div>  
+            <div id="comm_more" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Commercial Management</h2>
+                    <p>The core of the company, the Chartering and Operations departments, 
+                        offer to its clients full range of professional and competitive services starting with obtaining suitable employment for
+                         its managed vessels through a wide net of well-respected charterers, followed by close supervision on a 24/7 basis of vessels'
+                          day-to-day operations,
+                         which includes but is not limited to issuing instructions, following vessels' performance throughout its designated voyage,
+                          cooperate with agents and authorities for smooth loading and discharging operations, cargo handling, bunkering, and finally 
+                          closely monitor hire/freight collections, disbursements, payments etc.
+
+                        A separate Claims and Insurance Department is responsible for maintaining hull and machinery insurance,
+                         war risks insurance, protection and indemnity cover, increased value insurance and defence cover for the managed vessels,
+                          as well as handles all the potential claims</p>
+                </div>
+            </div>
+            <div id="tech_more" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Technical Management</h2>
+                    <p><h3>TECHNICAL DEPARTMENT</h3>The Company's technical department is responsible for the technical supervision,
+                         maintenance and attendance of dry dockings and repairs of all managed vessels. 
+                         The department is manned with experienced and highly educated superintendent engineers who are doing
+                          their outmost best to make sure that each vessel is monitored and maintained so as to perform at its 
+                          maximum capacity, through a well-studied Planned Maintenance System and often visits on board the vessels</p>
+                    <p><h3>QUALITY & SAFETY DEPARTMENT</h3>Franco Compania Naviera S.A. was ISM certified by Det Norske Veritas in January 1998,
+                         and since December 2002 is certified by ClassNK and ISO 9001:2008 certified since 2008 by Nippon Kaiji Kyokai as well.
+                          The department is responsible for the safety and security on board the vessels,
+                           pollution prevention and environmental management in every respect. As per Company's philosophy,
+                            the department is always vigilant to maintain all vessels' in full compliance with laws and regulations
+                             of the flag state(s), Classification Societies, as well as all national and international requirements
+                              and regulations. In cooperation with the Technical Dept. frequently audit the onboard procedures
+                               in order to ensure that the implementation of the Company's Safety Management System progresses smoothly.</p>
+                    <p><h3>PURCHASING DEPARTMENT</h3>The purchasing department is responsible for obtaining vessels’
+                         deck and engine spares, materials, supplies, provisions, stores, equipment and services all 
+                         over the world at specified qualities and quantities, always bearing in mind vessels' trade and time limits.</p>
+                </div>
+            </div>
+            <div id="crew_more" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">CREWING</h2>
+                    <p>The Crew Department is responsible for ensuring that each vessel is
+                         manned with capable and experienced seafarers always in accordance with national a
+                         nd international requirements and regulations. The company appreciates the human element
+                          as being the most critical of all factors and in co-operation with independent manning agents select, 
+                          provide and recruit competent, properly trained crew for the vessels. Franco Compania Naviera S.A. values
+                           its employees and focuses in their training and well-being and maintains a pool of seafarers who work with 
+                           us for over a decade.</p>
+                </div>
+            </div>
+        </div>
+        <h2 id="fleet">FLEET</h2>
+        <div class="fleet" >
+            <table class="uk-table uk-table-striped">
+                <thead>
+                    <tr>
+                        <th>VESSEL NAME</th>
+                        <th>SIZE</th>
+                        <th>BUILT</th>
+                        <th>YARD</th>
+                        <th>SPECIFICATIONS</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M/V ALEGRE III</td>
+                        <td>55,808 DWT</td>
+                        <td>2007</td>
+                        <td>Japan</td>
+                        <td>4 x 30.5t / grab</td>
+                        <td class="fleet_links">
+                             <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                             <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>M/V BRYANT</td>
+                        <td>76,595 DWT</td>
+                        <td>2009</td>
+                        <td>Japan</td>
+                        <td>Gearless</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V DELSA</td>
+                        <td>63,166 DWT</td>
+                        <td>2015</td>
+                        <td>China</td>
+                        <td>4 x 36t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V ENY</td>
+                        <td>53,525 DWT</td>
+                        <td>2006</td>
+                        <td>Japan</td>
+                        <td>4 x 36t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V HELENA G</td>
+                        <td>37,251 DWT</td>
+                        <td>2007</td>
+                        <td>China</td>
+                        <td>4 x 40t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V ISABELLE G</td>
+                        <td>37,251 DWT</td>
+                        <td>2004</td>
+                        <td>China</td>
+                        <td>4 x 40t / gra</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V JOHANNA G</td>
+                        <td>37,251 DWT</td>
+                        <td>2004</td>
+                        <td>China</td>
+                        <td>4 x 40t / gra</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V KOUROUPI</td>
+                        <td>56,047 DWT</td>
+                        <td>2008</td>
+                        <td>Japan</td>
+                        <td>4 x 30t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V MARIA G</td>
+                        <td>37,249 DWT</td>
+                        <td>2007</td>
+                        <td>China</td>
+                        <td>4 x 40t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V MIYAMA</td>
+                        <td>75,777 DWT</td>
+                        <td>2005</td>
+                        <td>Japan</td>
+                        <td>Gearless</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V ODIRIS</td>
+                        <td>53,466 DWT</td>
+                        <td>2005</td>
+                        <td>Japan</td>
+                        <td>4 x 30.5t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>M/V REA</td>
+                        <td>32,755 DWT</td>
+                        <td>2010</td>
+                        <td>China</td>
+                        <td>4 x 40t / grab</td>
+                        <td class="fleet_links">
+                            <a class="uk-icon-button" uk-icon="icon:  download"></a>
+                            <a class="uk-icon-button" uk-icon="icon: camera"></a>
+                       </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2  id="policies">POLICIES</h2>
+        <div class="policies">
+            <div id="occup">
+                <h3>Occupational Health-Drug & Alcohol</h3>
+                <p>Franco Compania Naviera S.A. Occupational Health, Drug and Alcohol Abuse Policy apply to all personnel who may work on or visit the Company's managed Vessels.</p>
+                <h4>OCCUPATIONAL HEALTH</h4>
+                <p>The Company ensures the proper Safety environment for all employees, ashore and on board to operate efficiently, with comfort and safety.</p>
+                <p>All personnel, ashore and on board, are informed of and educated about the health hazards of products they handle, or to which they may be exposed during the course of their work. All hazardous substances are controlled, and emergency treatment is available, whenever necessary.</p>
+                <p>Procedures are established for: Safe working practices. Maintenance of machinery and equipment for safe working condition. Supply of personal protection equipment. First aid training / facilities. Accident reporting and investigation. Record keeping.</p>
+                <h4>DRUGS</h4>
+                <p>The misuse of legitimate drugs or the use, possession, distribution or sale of illicit or un-prescribed controlled drugs ashore or onboard ship or by shore staff/crew members on leave is prohibited. The Company will not authorise the employment of any persons who are users of or have a recent record of the use of illegal drugs or have abused the use of prescribed drugs. Any crew member found in contravention of the Company's drug policy will be instantly dismissed and handed over to the appropriate authorities for prosecution. All are reminded that in certain countries possession of illegal drugs can result in the DEATH PENALTY.</p>
+                <h4>ALCOHOL</h4>
+                <p>On all Vessels alcohol is only allowed in strictly limited quantities and its consumption is controlled to ensure that: Consumption is limited to ensure blood alcohol levels do not exceed 40 mg/100 ml. Consumption is prohibited during work periods and four hours before any scheduled work period. All seafarers will be subjected to testing and screening for drugs and alcohol abuse during required pre-joining medical examinations. Any person found to have an alcohol problem will not be employed aboard Company's managed Vessels.</p>
+            </div>
+            <div id="safety">
+                <h3>Safety & Environmental</h3>
+                <p>Franco Compania Naviera S.A. has identified safety and the protection of the environment from intentional or accidental pollution as two key areas in its sphere of operations that are of paramount importance and which need to be effectively controlled to prevent unnecessary injuries, loss of life, damage to health or property and degradation of the environment.</p>
+                <p>To meet this requirement, Franco Compania Naviera S.A. has fully incorporated the IMO's International Safety Management Code requirements within its Management System. The System is designed to ensure that the Company's activities are sufficiently controlled to protect personnel, property and the environment from all risks and hazards that can be reasonably anticipated.</p>
+                <p>Furthermore the Company has adopted all valid national and international Rules and Regulations relative to its operations. A maintenance program has been implemented for the Vessels, including inspections at set intervals.</p>
+                <p>The Company also recognizes that an effective Safety and Environmental Protection System makes for more profitable operation and thereby ensures the welfare of all involved in the business, both ashore and at sea.</p>
+                <p>Safety is the concern of all and has no rank. However, for it to be effective, management must demonstrate and constantly emphasize its importance. To this end, the management is committed to making all personnel more safety conscious and to encouraging all to become actively involved in identifying possible hazards, implementing corrective action and constantly monitoring all aspects of their working environment to ensure that Safety conditions prevail.</p>
+                <p>An accident is indicative of a failure in the operating system, and the Company is committed to investigating fully all accidents or near accidents. The results of such investigations and any necessary corrective action will be brought to the attention of all concerned, so as they all may learn from the incident.</p>
+                <p>Learning is a never ending journey on the road to excellence, and effective training is fundamental to the Company's business and its safety culture. As our standards improve, new goals and targets will be set which all personnel shall strive to attain.</p>
+            </div>
+            <div id="training">
+                <h3>Training</h3>
+                <h4>IT IS COMPANY POLICY TO:</h4>
+                <p>Ensure that personnel connected with the provision of services offered by the Company are appropriately experienced and trained in that task.</p>
+                <p>Identify training needs by means of on-going appraisal of individual development and performance.</p>
+                <p>Arrange appropriate training for individuals in accordance with the resources available and current operational demands.</p>
+                <p>Encourage those more experienced in the Company's business and operations to share their knowledge with less experienced personnel.</p>
+                <p>Maintain adequate records of training and experience.</p>
+                <p>Conduct periodic informal interviews with personnel where free interchange of opinion can take place to address both the needs of the individual and those of the Company.</p>
+                <p>Adhere to national and international requirements for manning Vessels and to ensure that the records of sea-staff are available for verification.</p>
+                <p>For further information, please refer to Company Safety Management Manual, section 6.3 and the Shipboard Safety Management Manual, section 6.3.</p>
+            </div>
+            <div id="security">
+                <h3>Security</h3>
+                <p>It is the Company's policy to establish and implement on board a "Security Management System" in order to meet the following Security requirements:</p>
+                <span>To detect security threats and take preventive measures against potential security incidents.</span>
+                <span>To designate appropriate senior staff with overall responsibility for security within the Company and individual ships.</span>
+                <span>To cooperate with the responsible authorities and to act on advise from them.</span>
+                <span>To promote security awareness amongst all employees.</span>
+                <span>To establish a reporting and recording system for security incidents.</span>
+                <span>To establish, implement and verify specific security measures on board.</span>
+                <p>The company is committed to provide the appropriate security guidance, advise, documentation and necessary resources in order to meet its security objectives and fully comply with the requirements of the ISPS code and any other additional requirements that may be stipulated by the relevant competent Contracting Governments. In particular the Company is committed to ensure that the Company Security Officer, the Master and Ship Security Officer are given the necessary support and resources to fulfil their duties and responsibilities in accordance with SOLAS Chapter XI-2 and ISPS Code. Furthermore the company shall consistently & systematically review its security policy and relevant security measures in order to ensure that they remain effective.</p>
+            </div>
+            <div id="quality">
+                <h3>Quality</h3>
+                <p>Franco Compania Naviera S.A. is committed to provide safe and efficient ship management and marine transportation services, and, thereby, aims to foster long-term commercial relationships with its customers.</p>
+                <p>The Company has implemented a QMS that meets, as a minimum, the requirements of the ISO9001:2008 Standard, as specified in the Quality Management System, to establish its commitment.</p>
+                <p>To effectively implement the Quality Policy and meet the objectives, the Company:</p>
+                <span>Ensures compliance with all National, International and Flag Administration Legislations.</span>
+                <span>Takes into account all related guidelines, standards, codes and publications as applicable.</span>
+                <span>Provides adequate resources for the effective implementation of the QMS.</span>
+                <span>Sets quality objectives towards the continuous improvement of the system.</span>
+                <span>Continuously improves the QMS by taking necessary actions for identified problem areas, through the implementation of Internal Auditing and Management Review processes.</span>
+                <span>Meets customer requirements as defined in the Ship Management Agreements and Charter Parties.</span>
+                <p>All Company’s personnel, shore based and sea going, are responsible for implementing the Company's Quality Policy.</p>
+                <p>The Company's Management is responsible for monitoring and reviewing the Quality policy, on a regular basis, in order to ensure that it remains relevant and effective.</p>
+                <p>As evidence of Management’s commitment to the implementation of the above, the Quality policy is posted at prominent positions in Company’s premises and on-board managed vessels.</p>
+            </div>
+        </div>
+        <h2  id="affiliates">AFFILIATES</h2>
+        <div class="affiliates">
+            <img src="img/Logo.svg" class="aff_logo">
+            <img src="img/aff1.png">
+            <img src="img/aff2.png">
+        </div>
+        <h2  id="contact">CONTACT</h2>
+        <div class="contact">
+            <div class="map">
+                <h3>Contact Details</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141.234344171961!2d23.807104315801567!3d38.06492320318495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDAzJzUzLjciTiAyM8KwNDgnMzMuNSJF!5e0!3m2!1sen!2sgr!4v1568717827446!5m2!1sen!2sgr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <p>Franco Compania Naviera S.A.</p>
+                <p>Address: 227 Kifissias Ave, Kifissia, Athens, 145 61, Greece</p>
+                <p>Email: franco@franco.gr</p>
+                <p>Phone: (+30) 2108761000</p>
+                <p>Fax: (+30) 2106123200</p>
+                <p>Website: http://www.franco.gr</p>
+            </div>
+            <div class="form">
+                <div class="send">
+                    <img src="img/mess.png">
+                    <p>Send us an email...</p>
+                </div>
+                <div class="form_area">
+                    <p>First Name:</p>
+                    <input class="uk-input" type="text">
+                    <p>Last Name:</p>
+                    <input class="uk-input" type="text">
+                    <p>Email:</p>
+                    <input class="uk-input" type="text">
+                    <p>Subject:</p>
+                    <input class="uk-input" type="text">
+                    <p>Comment:</p>
+                    <textarea class="uk-textarea" rows="5"></textarea>
+                    <a class="button">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2020 - Franco Compania Naviera S.A.</p>
+    </div>
+</body>
+</html>
