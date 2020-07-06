@@ -348,6 +348,7 @@ h2{
         width: 100%;
         padding-left: 150px;
         padding-right: 150px;
+        background: black;
     }
     .num div{
         font-size:0.5em;
