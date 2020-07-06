@@ -341,11 +341,16 @@ h2{
     .num{
         text-align: center;
     }
+    .num div{
+        font-size:0.5em;
+    }
     .order a{
         font-size: 2em;
     }
     .order input{
         width: 100%;
+        font-size: 3em;
+        height: 50px;
     }
     .para{
         flex-flow: column-reverse;
@@ -390,6 +395,12 @@ h2{
     }
     .button{
         font-size: 2em;
+        transition: none;
+    }
+    .button:hover{
+        background: rgb(94, 94, 94) no-repeat;
+        color: white;
+        scale: (1);
     }
     .techs p{
         text-align: center;
