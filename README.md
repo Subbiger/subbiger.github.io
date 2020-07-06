@@ -5,4 +5,4 @@
 
 макет сайта [ремонта техники](https://subbiger.github.io/Tech/)
 
-Копия сайта franco.gr, написанная с нуля и переделана с многостраничного сайта в [лендинг](https://subbiger.github.io/School/)
+Копия сайта franco.gr, написанная с нуля и переделана с многостраничного сайта в [лендинг](https://subbiger.github.io/franco/)
