@@ -333,13 +333,20 @@ h2{
         flex-wrap: nowrap;
         align-items: center;
         font-size: 0.8em;
+        width: 100%;
     }
     .cons{
-        width: 100%;
+        width: 80%;
         text-align: center;
     }
     .num{
+        width: 80%;
         text-align: center;
+    }
+    .form{
+        width: 100%;
+        padding-left: 150px;
+        padding-right: 150px;
     }
     .num div{
         font-size:0.5em;
@@ -350,7 +357,6 @@ h2{
     .order input{
         width: 100%;
         font-size: 2em;
-        height: 50px;
     }
     .para{
         flex-flow: column-reverse;
@@ -385,6 +391,9 @@ h2{
     .para2 img{
         margin: 20px;
         width: 30%;
+    }
+    .techs{
+        width: 80%;
     }
     .techs h2{
         margin: 50px 0;
