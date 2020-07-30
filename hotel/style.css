@@ -432,4 +432,7 @@ iframe{
     .mini_back{
         display: inline;
     }
+    .form input{
+        padding: 40px 12px;
+    }
 }
