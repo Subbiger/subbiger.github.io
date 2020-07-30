@@ -295,5 +295,7 @@ iframe{
     }
 }
 @media all and (max-device-width: 900px){
-
+    iframe{
+        width: 800px;
+    }
 }
