@@ -7,3 +7,7 @@ function scrollFunction() {
     $('.scroll_up').hide(200);
   }
 }
+
+$('#mini a').click(function() {
+  UIkit.offcanvas.hide([force = false])
+});

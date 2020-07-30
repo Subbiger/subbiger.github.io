@@ -4,8 +4,8 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background:url(img/fon.png);
     font-family: 'Roboto Condensed' ;
+    min-width: 1200px;
     max-width: 1920px;
-    max-height: 3670px;
     color: rgb(192, 151, 61); 
 }
 body{
@@ -26,6 +26,8 @@ a:hover{
     top:20px;
     z-index: 3;
     width: 100%;
+    min-width: 1200px;
+    max-width: 1920px;
     font-size: 22px;
     display: flex;
     flex-direction: row; 
@@ -148,9 +150,9 @@ h2{
     text-align:center;
 }
 iframe{
-    width: 1200px;
+    width: 90%;
     height: 800px;
-    margin: 50px 0;
+    margin: 50px auto;
 }
 .map p{
     font-size: x-large;
@@ -220,6 +222,7 @@ iframe{
     margin-right: 100px;
 }
 .phone{
+    white-space: nowrap;
     display: flex;
     flex-flow: row;
     flex-wrap: nowrap;
@@ -284,6 +287,45 @@ iframe{
     display: none;
     opacity: 0.5;
 }   
+.mini_header a{
+    color: rgb(192, 151, 61);
+    font-size: 50px;
+    text-align: left;
+}
+.button2{
+    background: url(img/arrow.svg) no-repeat;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 100px;
+    border: none;
+    outline: none;
+    transform: rotate(180deg);
+    position: absolute;
+    top:20px;
+    left: 70px;
+    z-index: 3;
+    display: none;
+}
+.drop{
+    background: rgb(34, 34, 34);
+    position: absolute;
+    top:190px;
+    z-index: 3;
+}
+.drop .uk-nav{
+    display: flex;
+    flex-flow: column;
+}
+.drop a:hover{
+    color: rgb(179, 162, 126);
+}
+.mini_back{
+    height: 200px;
+    background: rgba(0, 0, 0, 0.87);
+    width: 100%;
+    display: none;
+}
+
 @keyframes arrowtop {
     from {
     opacity:1;
@@ -297,5 +339,97 @@ iframe{
 @media all and (max-device-width: 900px){
     iframe{
         width: 800px;
+    }
+    .button2{
+        display: inline;
+    }
+    .header{
+        display: none;
+    }
+    .top img{
+        height: 150px;
+        margin: 0 auto;
+    }
+    .top{
+        font-size: 52px;
+    }
+    .slide{ 
+        font-size: 50px;
+    }
+    .slide h2{
+        font-size: 60px;
+    }
+    h2{
+        font-size: 80px;
+    }
+    .about p{
+        font-size: 50px;
+    }
+    .about span{
+        font-size: 51px;
+    }
+    .about_list{
+        font-size: 52px;
+    }
+    .about p:last-of-type{
+        font-size: 53px;
+    }
+    .gallery p{
+        font-size: 50px;
+    }
+    .map p{
+        font-size: 50px;
+    }
+    .map span{
+        font-size: 51px;
+    }
+    .book p{
+        font-size: 51px;
+    }
+    .form input{
+        font-size: 55px;
+    }
+    .form h3{
+        font-size: 50px;
+    }
+    .book .button{
+        font-size: 50px;
+    }
+    .footer{
+        font-size: 55px;
+    }
+    .notif{
+        font-size: 40px;
+    }
+    .copy{
+        font-size: 40px;
+    }
+    .phone{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .footer .uk-divider-vertical{
+        display: none;
+    }
+    .social{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .social a{
+        margin: 20px;
+    }
+    .social a:hover{
+        transform: none;
+    }
+    .social img{
+        width: 100px;
+    }
+    .full_back{
+        display: none;
+    }
+    .mini_back{
+        display: inline;
     }
 }

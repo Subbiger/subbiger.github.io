@@ -14,14 +14,15 @@
     <div class="top">
         <img src="img/logo.svg" class="logo">
         <div class="header">    
-            <a href="#about" uk-scroll>О нас</a>
-            <a href="#gallery" uk-scroll>Галлерея</a>
-            <a href="#map" uk-scroll>Расположение</a> 
-            <a href="#book" uk-scroll>Забронировать</a>
-            <a href="#contacts" uk-scroll>Контакты</a>      
+            <a href="#about" uk-scroll>О НАС</a>
+            <a href="#gallery" uk-scroll>ГАЛЛЕРЕЯ</a>
+            <a href="#map" uk-scroll>РАСПОЛОЖЕНИЕ</a> 
+            <a href="#book" uk-scroll>ЗАБРОНИРОВАТЬ</a>
+            <a href="#contacts" uk-scroll>КОНТАКТЫ</a>      
         </div>
     </div>
-    <div uk-slideshow="animation: push; autoplay: true; autoplay-interval: 6000; pause-on-hover:false;" class="uk-cover-container">
+    <div class="mini_back"></div>
+    <div uk-slideshow="animation: push; autoplay: true; autoplay-interval: 6000; pause-on-hover:false;" class="uk-cover-container full_back">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" >
             <ul class="uk-slideshow-items" uk-height-viewport>
                 <li>
@@ -60,7 +61,7 @@
                         <h2 uk-slideshow-parallax="x: -550,0,550;">ЗАБРОНИРОВАТЬ</h2>
                         <p uk-slideshow-parallax="x: 550,0,-550;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                              Proin id orci a justo ultricies placerat vel non dolor. Proin fermentum nisi nulla, in commodo ex semper in.</p>
-                        <a class="button uk-link-text" href="#map" uk-scroll>ПОДРОБНЕЕ<span uk-icon="icon: chevron-down; ratio: 1.8" class="arrow"></span></a>
+                        <a class="button uk-link-text" href="#book" uk-scroll>ПОДРОБНЕЕ<span uk-icon="icon: chevron-down; ratio: 1.8" class="arrow"></span></a>
                     </div>
                 </li>
                 <li>
@@ -70,7 +71,7 @@
                         <h2 uk-slideshow-parallax="x: -550,0,550;">КОНТАКТЫ</h2>
                         <p uk-slideshow-parallax="x: 550,0,-550;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                              Proin id orci a justo ultricies placerat vel non dolor. Proin fermentum nisi nulla, in commodo ex semper in.</p>
-                        <a class="button uk-link-text" href="#map" uk-scroll>ПОДРОБНЕЕ<span uk-icon="icon: chevron-down; ratio: 1.8" class="arrow"></span></a>
+                        <a class="button uk-link-text" href="#contacts" uk-scroll>ПОДРОБНЕЕ<span uk-icon="icon: chevron-down; ratio: 1.8" class="arrow"></span></a>
                     </div>
                 </li>
             </ul>
@@ -223,6 +224,18 @@
     </div>
     <div class="scroll_up">
         <a href="#" uk-scroll><img src="img/arrow.svg"></a>
+    </div>
+    <div class="mini_header">
+        <button class="button2"></button>
+        <div uk-dropdown="pos: bottom-justify; boundary: .boundary-align; boundary-align: true; mode: click" class=" drop">
+            <ul class="uk-nav">
+                <li><a href="#about" uk-scroll>О нас</a></li>
+                <li><a href="#gallery" uk-scroll>Галлерея</a></li>
+                <li><a href="#map" uk-scroll>Расположение</a> </li>
+                <li><a href="#book" uk-scroll>Забронировать</a></li>
+                <li><a href="#contacts" uk-scroll>Контакты</a> </li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
