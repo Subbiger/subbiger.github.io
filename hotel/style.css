@@ -98,8 +98,7 @@ a:hover{
 }
 .about{
     width: 90%;
-    margin: 0 auto;
-    margin-top: 100px; 
+    margin: 0 auto; 
 }
 h2{
     text-align: center;
@@ -136,8 +135,7 @@ h2{
     font-size: 33px;
 }
 .gallery{
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin: 0 auto;
 }
 .gallery h2{
     margin-bottom: 70px;
@@ -169,7 +167,7 @@ iframe{
     align-items: center;
 }
 .map{
-    margin-bottom: 200px;
+    margin: 0 auto;
 }
 .book p{
     margin: 0 auto;
@@ -325,7 +323,16 @@ iframe{
     width: 100%;
     display: none;
 }
-
+.divider_top{
+    display: block;
+    width:800px;
+    margin: 50px auto;
+}
+.divider_mid{
+    display: block;
+    width:1300px;
+    margin: 90px auto;
+}
 @keyframes arrowtop {
     from {
     opacity:1;
