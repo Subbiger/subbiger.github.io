@@ -9,7 +9,7 @@
 
 -Копия сайта [franco.gr](https://www.franco.gr/), написанная с нуля и переделана с многостраничного сайта в [лендинг](https://subbiger.github.io/franco/)
 # Участвовал в этих фриланс проектах:
--[Лендинг для сайта международных перевозок](http://new.cmg-dostavka.com.ua/): 
+-http://new.cmg-dostavka.com.ua/
 
 -https://pizzabrazzers.com/ru/
 
