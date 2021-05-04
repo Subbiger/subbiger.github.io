@@ -338,7 +338,7 @@ td{
     margin:10px 30px;
 }
 .hidden{
-    display: none;
+    display: none !important;
 }
 .close_img {
     margin: 7px;
