@@ -179,10 +179,13 @@ function add_texture_bar(number){
     texture_bar.append(remove_texture_button);
     remove_texture_button.addEventListener('click', function(){
         document.querySelector(`.graph > div[data-menu="${number}"]`).remove();
+        slider_correction();
+        occupied_reload();
         revive(number);
     });   
     slider_control();
     occupied_reload();
+    slider_correction();
 }
 
 //----синхронизация слайдеров со значениями в текстовых областях
@@ -232,6 +235,44 @@ function opacity_i(selector){
     }
 }
 
+//----корректировка значений слайдеров при генерации таблицы/добавлении/удалении текстуры
+
+function slider_correction(){
+    let bar = document.querySelectorAll('.graph > div[data-menu]');
+    let cell_quantity = calculate_cells();
+    for(let div of bar){
+        let slider = div.querySelector('input[type="range"]');
+        let number = div.querySelector('input[type="number"]');
+        let slider_quantity = document.querySelectorAll('input[type="range"]').length;
+        number.value = Math.round(cell_quantity / slider_quantity);
+        number.setAttribute("max", `${cell_quantity}`);
+        slider.value = number.value;
+        slider.setAttribute("max", `${cell_quantity}`);
+    }
+    let sum = sum_calculate();
+    if (sum < cell_quantity && document.querySelectorAll('.graph > div[data-menu]').length > 0){
+        for(let i = sum; i < cell_quantity;i++){
+            document.querySelectorAll('input[type="number"]')[0].value++;
+            document.querySelectorAll('input[type="range"]')[0].value++;    
+            sum = sum_calculate();
+        }
+    }
+    if (sum > cell_quantity && document.querySelectorAll('.graph > div[data-menu]').length > 0){
+        for(let i = sum; i > cell_quantity;i--){
+            document.querySelectorAll('input[type="number"]')[0].value--;
+            document.querySelectorAll('input[type="range"]')[0].value--;    
+            sum = sum_calculate();
+        }
+    }
+    for (let div of bar){
+        let slider = div.querySelector('input[type="range"]');
+        let number = div.querySelector('input[type="number"]');
+        slider.value = number.value;
+        number.value = slider.value;
+    }
+    occupied_reload();
+}
+
 //----события
 menu_attr_generate();  
 
@@ -240,10 +281,11 @@ document.querySelector('.table_generate').addEventListener('click', function(){
     let overall_cell_number = +document.querySelector('select').value;
     generate_table(Math.sqrt(overall_cell_number),Math.sqrt(overall_cell_number));
     cells_id_generate();
-    document.querySelector('.in_table').innerHTML = calculate_cells();  
+    document.querySelector('.in_table').innerHTML = calculate_cells(); 
+    slider_correction();
 });
 document.querySelector('.table_generate').addEventListener('pointerdown', function(event){
-    event.preventDefault()
+    event.preventDefault();
     document.querySelector('.table_generate').classList.add('button_down');
 });
 document.querySelector('.table_generate').addEventListener('pointerup', function(){
