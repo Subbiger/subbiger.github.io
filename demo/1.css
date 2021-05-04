@@ -353,6 +353,9 @@ td{
 }
 .graph .remove{
     margin: 0 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .graph .close_img{
     margin: 0;
