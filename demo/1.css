@@ -1,0 +1,370 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    margin: 0;
+    color: rgb(182, 182, 182);
+}
+body{
+    padding: 10px;
+    margin: 0;
+}
+p{
+    margin: 5px;
+}
+input[type="number"]{
+    margin: 0 10px 0 20px;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    font-size: 0.95em;
+    color: rgb(182, 182, 182);
+    background-color:rgb(58, 58, 58);
+    border: none;
+}
+input[type="range"]{
+    margin: 0 0 0 20px;
+    appearance: none;
+    background-color: rgb(58, 58, 58);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    height: 12px;
+    border-radius: 5px;
+}
+input[type="range"]:hover {
+    opacity: 1;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 25px;
+    background: rgb(182, 182, 182);
+    cursor: pointer;
+    border-radius: 5px;
+}
+  
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 25px;
+    background: rgb(182, 182, 182);
+    cursor: pointer;
+    border-radius: 5px;
+}
+.wrap{
+    min-width: 1450px;
+    max-width: 1450px;
+    margin: 50px auto 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border: 1px solid rgb(44, 44, 44);
+    background-color: rgb(19, 19, 19);
+    margin: auto auto;
+    padding: 20px;
+}
+.section_1{
+    margin-left: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.table_space{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    background-color: rgb(10, 10, 10);
+}
+.color_choice{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.buttons{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.graph{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+.generate{
+    border: 1px solid rgb(12, 12, 12) ;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+    margin: 10px 15px;
+    background: rgb(12, 12, 12);
+    transition: all 0.2s;
+}
+.generate:hover{
+    border: 1px solid rgb(46, 46, 46) ;
+    color: rgb(182, 182, 182);
+    background: rgb(24, 24, 24);
+}
+.add_texture{
+    border: 1px solid rgb(12, 12, 12) ;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+    margin: 10px 15px;
+    background: rgb(12, 12, 12);
+    transition: all 0.2s;
+}
+.add_texture:hover{
+    border: 1px solid rgb(46, 46, 46) ;
+    color: rgb(182, 182, 182);
+    background: rgb(24, 24, 24);
+}
+.remove_texture{
+    border: 1px solid rgb(12, 12, 12) ;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+    margin: 10px 15px;
+    background: rgb(12, 12, 12);
+    transition: all 0.2s;
+}
+.remove_texture:hover{
+    border: 1px solid rgb(46, 46, 46) ;
+    color: rgb(182, 182, 182);
+    background: rgb(24, 24, 24);
+}
+.full_clear{
+    border: 1px solid rgb(12, 12, 12) ;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+    margin: 10px 15px;
+    background: rgb(12, 12, 12);
+    transition: all 0.2s;
+}
+.full_clear:hover{
+    border: 1px solid rgb(46, 46, 46) ;
+    color: rgb(182, 182, 182);
+    background: rgb(24, 24, 24);
+}
+.info{
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.stats{
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+.stats > div{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-between;
+}
+.in_table{
+    margin: auto 5px;
+}
+.occupied{
+    margin: auto 5px;
+}
+.add_menu{
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    opacity: 1;
+    transition: opacity .3s;
+}
+.back{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(5, 5, 5, 0.767);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add_menu_show{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid rgb(110, 110, 110);
+}
+.add_menu_textures{
+    align-self: center;
+    display: flex;
+    flex-flow: row wrap;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.close{
+    align-self: flex-end;
+}
+.table_options{
+    margin-right: 50px;
+    width: 350px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+.select_gen{
+    margin: 15px 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.table_generate{
+    border: 1px solid rgb(12, 12, 12) ;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(182, 182, 182);
+    padding: 10px;
+    margin: 5px;
+    background: rgb(12, 12, 12);
+    transition: all 0.2s;
+}
+.table_generate:hover{
+    border: 1px solid rgb(46, 46, 46) ;
+    color: rgb(182, 182, 182);
+    background: rgb(24, 24, 24);
+}
+.select_gen > select{
+    font-size: 1em;   
+    color: rgb(182, 182, 182);
+    background-color: rgb(58, 58, 58);
+}
+.select_gen > select option:nth-child(even){
+    font-size: 1em;   
+    color: rgb(182, 182, 182);
+    background-color: rgb(49, 49, 49);
+}
+table{
+    border-spacing: 0;
+}
+table > tr > td{
+    border-top: 4px solid rgb(36, 36, 36);
+    border-left: 4px solid rgb(31, 31, 31);
+    border-right: 4px solid rgb(5, 5, 5);
+    border-bottom: 4px solid rgb(5, 5, 5);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    cursor: pointer;
+}
+td{
+    height: 50px;
+    width: 50px;
+}
+/**/
+.texture1{
+    background-image: url(img/1.jpg);
+    background-size: 100% 100%;
+}
+.texture2{
+    background-image: url(img/2.jpg);
+    background-size: 100% 100%;
+}
+.texture3{
+    background-image: url(img/3.jpg);
+    background-size: 100% 100%;
+}
+.texture4{
+    background-image: url(img/4.jpg);
+    background-size: 100% 100%;
+}
+.texture5{
+    background-image: url(img/5.jpg);
+    background-size: 100% 100%;
+}
+.texture6{
+    background-image: url(img/6.jpg);
+    background-size: 100% 100%;
+}
+.texture7{
+    background-image: url(img/7.jpg);
+    background-size: 100% 100%;
+}
+.texture8{
+    background-image: url(img/8.jpg);
+    background-size: 100% 100%;
+}
+.tile_image{
+    width: 30px;
+    height: 30px;
+}
+.menu_img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+.menu_img:hover{
+    cursor: pointer;
+}
+.graph > div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin:10px 30px;
+}
+.hidden{
+    display: none;
+}
+.close_img {
+    margin: 7px;
+    width: 20px;
+    height: 20px;
+}
+.close_img:hover {
+    cursor: pointer;
+}
+.close:hover {
+    cursor: pointer;
+}
+.graph .remove{
+    margin: 0 0 0 20px;
+}
+.graph .close_img{
+    margin: 0;
+}
+.button_down{
+    border: 1px solid rgb(12, 12, 12) !important;
+    color: rgb(10, 10, 10) !important;
+    background: rgb(161, 161, 161) !important;
+}
+.opacity_full{
+    opacity: 0;
+}
+.remove:hover{
+    cursor: pointer;
+}

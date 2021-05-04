@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="1.css">
+        <script defer src="ver_2.0.js"></script>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="section_1">
+                <div class="color_choice">
+                    <div class="buttons">
+                        <a class="generate">
+                            Сгенерировать
+                        </a>
+                        <a class="add_texture">
+                            Добавить текстуру
+                        </a>
+                        <a class="remove_texture">
+                            Убрать текстуру
+                        </a>
+                        <a class="full_clear">
+                            Полная очистка
+                        </a>
+                    </div>
+                    <div class="graph"></div>
+                </div>
+                <div class="info">
+                    <div class="stats">
+                        <p>Общее количество ячеек:</p>
+                        <div>
+                            <p>В таблице:</p>
+                            <div class="in_table">
+                                0
+                            </div>
+                        </div>
+                        <div>
+                            <p>Будет закрашено:</p>
+                            <div class="occupied">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table_options">
+                        <p>Выберите количество ячеек квадратной таблицы для генерации:</p>
+                        <div class="select_gen">
+                            <select>
+                                <option value="1"> 1 x 1 (1) </option>
+                                <option value="4"> 2 X 2 (4)</option>
+                                <option value="9"> 3 X 3 (9) </option>
+                                <option value="16"> 4 X 4 (16) </option>
+                                <option value="25"> 5 X 5 (25) </option>
+                                <option value="36"> 6 X 6 (36) </option>
+                                <option value="49"> 7 X 7 (49) </option>
+                                <option value="64"> 8 X 8 (64) </option>
+                                <option value="81"> 9 X 9 (81) </option>
+                                <option value="100"> 10 X 10 (100) </option>
+                            </select>
+                            <a class="table_generate"> Сгенерировать таблицу</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table_space">
+                <table>
+                </table>
+            </div>
+            <div class="back hidden">
+                <div class="add_menu">
+                    <div class="close"><img class="close_img" src="img/x.png"></div>
+                    <p>Выберите текстуру для добавления</p>
+                    <div class="add_menu_textures">
+                        <img src="img/1.jpg" class="menu_img">
+                        <img src="img/2.jpg" class="menu_img">
+                        <img src="img/3.jpg" class="menu_img">
+                        <img src="img/4.jpg" class="menu_img">
+                        <img src="img/5.jpg" class="menu_img">
+                        <img src="img/6.jpg" class="menu_img">
+                        <img src="img/7.jpg" class="menu_img">
+                        <img src="img/8.jpg" class="menu_img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
