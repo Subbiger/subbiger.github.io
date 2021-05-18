@@ -152,13 +152,11 @@ function revive(number){
     revived_menu.classList.add('menu_img');
     document.querySelector('.add_menu_textures').append(revived_menu);
     revived_menu.addEventListener('click', function(){
-        for(let button of document.querySelectorAll('.graph > div > .remove')){
-            button.classList.add('hidden');
-        }
         add_texture_bar(number);
         revived_menu.remove();
         if (document.querySelector('.add_menu_textures').children.length == 0){
             document.querySelector('.add_menu').classList.remove('add_menu_show');
+            document.querySelector('.back').classList.add('hidden');
         };
     });
 }
@@ -175,7 +173,7 @@ function add_texture_bar(number){
     let remove_texture_button = document.createElement('div');
     remove_texture_button.setAttribute('data-menu', number);
     remove_texture_button.innerHTML = '<img class = "close_img" src="img/x.png">';
-    remove_texture_button.classList.add('hidden','remove');
+    remove_texture_button.classList.add('remove');
     texture_bar.append(remove_texture_button);
     remove_texture_button.addEventListener('click', function(){
         document.querySelector(`.graph > div[data-menu="${number}"]`).remove();
@@ -257,10 +255,18 @@ function slider_correction(){
             sum = sum_calculate();
         }
     }
+    let input_numb = 0;  
     if (sum > cell_quantity && document.querySelectorAll('.graph > div[data-menu]').length > 0){
         for(let i = sum; i > cell_quantity;i--){
-            document.querySelectorAll('input[type="number"]')[0].value--;
-            document.querySelectorAll('input[type="range"]')[0].value--;    
+            if(document.querySelectorAll('input[type="number"]')[input_numb].value == 0){
+                input_numb++
+                document.querySelectorAll('input[type="number"]')[input_numb].value--;
+                document.querySelectorAll('input[type="range"]')[input_numb].value--; 
+            } else {
+                document.querySelectorAll('input[type="number"]')[0].value--;
+                document.querySelectorAll('input[type="range"]')[0].value--; 
+            }
+ 
             sum = sum_calculate();
         }
     }
@@ -273,10 +279,21 @@ function slider_correction(){
     occupied_reload();
 }
 
+
+//----генерация таблицы при загрузке страницы
+
+erase_table();
+let overall_cell_number = +document.querySelector('select').value;
+generate_table(Math.sqrt(overall_cell_number),Math.sqrt(overall_cell_number));
+cells_id_generate();
+document.querySelector('.in_table').innerHTML = calculate_cells(); 
+slider_correction();
+
+
 //----события
 menu_attr_generate();  
 
-document.querySelector('.table_generate').addEventListener('click', function(){
+document.querySelector('select').addEventListener('change', function(){
     erase_table();
     let overall_cell_number = +document.querySelector('select').value;
     generate_table(Math.sqrt(overall_cell_number),Math.sqrt(overall_cell_number));
@@ -284,36 +301,20 @@ document.querySelector('.table_generate').addEventListener('click', function(){
     document.querySelector('.in_table').innerHTML = calculate_cells(); 
     slider_correction();
 });
-document.querySelector('.table_generate').addEventListener('pointerdown', function(event){
-    event.preventDefault();
-    document.querySelector('.table_generate').classList.add('button_down');
-});
-document.querySelector('.table_generate').addEventListener('pointerup', function(){
-    document.querySelector('.table_generate').classList.remove('button_down');
-});
-
 
 document.addEventListener('pointerdown', function(event){
     switch(event.target){
         case document.querySelector('.generate'):
             event.preventDefault();
-            document.querySelector('.generate').classList.add('button_down');
+            document.querySelector('.generate').classList.add('button_down_green');
             break;
         case document.querySelector('.add_texture'):
             event.preventDefault();
             document.querySelector('.add_texture').classList.add('button_down');
             break;
-        case document.querySelector('.remove_texture'):
-            event.preventDefault();
-            document.querySelector('.remove_texture').classList.add('button_down');
-            break;
         case document.querySelector('.full_clear'):
             event.preventDefault();
             document.querySelector('.full_clear').classList.add('button_down');
-            break;
-        case document.querySelector('.table_generate'):
-            event.preventDefault();
-            document.querySelector('.table_generate').classList.add('button_down');
             break;
     }
 });
@@ -321,23 +322,15 @@ document.addEventListener('pointerup', function(event){
     switch(event.target){
         case document.querySelector('.generate'):
             event.preventDefault();
-            document.querySelector('.generate').classList.remove('button_down');
+            document.querySelector('.generate').classList.remove('button_down_green');
             break;
         case document.querySelector('.add_texture'):
             event.preventDefault();
             document.querySelector('.add_texture').classList.remove('button_down');
             break;
-        case document.querySelector('.remove_texture'):
-            event.preventDefault();
-            document.querySelector('.remove_texture').classList.remove('button_down');
-            break;
         case document.querySelector('.full_clear'):
             event.preventDefault();
             document.querySelector('.full_clear').classList.remove('button_down');
-            break;
-        case document.querySelector('.table_generate'):
-            event.preventDefault();
-            document.querySelector('.table_generate').classList.remove('button_down');
             break;
     }
 });
@@ -345,23 +338,15 @@ document.addEventListener('pointerout', function(event){
     switch(event.target){
         case document.querySelector('.generate'):
             event.preventDefault();
-            document.querySelector('.generate').classList.remove('button_down');
+            document.querySelector('.generate').classList.remove('button_down_green');
             break;
         case document.querySelector('.add_texture'):
             event.preventDefault();
             document.querySelector('.add_texture').classList.remove('button_down');
             break;
-        case document.querySelector('.remove_texture'):
-            event.preventDefault();
-            document.querySelector('.remove_texture').classList.remove('button_down');
-            break;
         case document.querySelector('.full_clear'):
             event.preventDefault();
             document.querySelector('.full_clear').classList.remove('button_down');
-            break;
-        case document.querySelector('.table_generate'):
-            event.preventDefault();
-            document.querySelector('.table_generate').classList.remove('button_down');
             break;
     }
 });
@@ -370,9 +355,9 @@ document.querySelector('.generate').addEventListener('click', fill);
 
 document.querySelector('.add_texture').addEventListener('click', function(){
     if (document.querySelector('.add_menu_textures').children.length != 0){
-        document.querySelector('.add_menu').classList.toggle('add_menu_show');
+        document.querySelector('.add_menu').classList.add('add_menu_show');
         opacity_i('.add_menu');
-        document.querySelector('.back').classList.toggle('hidden');
+        document.querySelector('.back').classList.remove('hidden');
     } else {
         alert('Уже добавлены все текстуры');
     };
@@ -380,9 +365,6 @@ document.querySelector('.add_texture').addEventListener('click', function(){
 
 for (let menu_button of document.querySelectorAll('.menu_img')){
     menu_button.addEventListener('click', function(){
-        for(let button of document.querySelectorAll('.graph > div > .remove')){
-            button.classList.add('hidden');
-        }
         add_texture_bar(menu_button.getAttribute('data-menu'));
         menu_button.remove();
         if (document.querySelector('.add_menu_textures').children.length == 0){
@@ -395,12 +377,6 @@ for (let menu_button of document.querySelectorAll('.menu_img')){
 document.querySelector('.close').addEventListener('click', function(){
     document.querySelector('.add_menu').classList.remove('add_menu_show');
     document.querySelector('.back').classList.add('hidden');
-});
-
-document.querySelector('.remove_texture').addEventListener('click', function(){
-    for(let button of document.querySelectorAll('.graph > div > .remove')){
-        button.classList.toggle('hidden');
-    }
 });
 
 document.querySelector('.full_clear').addEventListener('click', function(){

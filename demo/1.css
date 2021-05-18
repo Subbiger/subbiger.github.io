@@ -68,7 +68,7 @@ input[type="range"]::-moz-range-thumb {
     margin-left: 50px;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .table_space{
@@ -84,6 +84,8 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
 }
 .buttons{
     display: flex;
@@ -99,17 +101,16 @@ input[type="range"]::-moz-range-thumb {
     border: 1px solid rgb(12, 12, 12) ;
     text-transform: capitalize;
     text-align: center;
-    font-size: 1.2em;
-    color: rgb(182, 182, 182);
-    padding: 10px;
+    font-size: 1.5em;
+    color: rgb(10, 10, 10);
+    padding: 20px 30px;
     margin: 10px 15px;
-    background: rgb(12, 12, 12);
+    background: rgb(24, 163, 31);
     transition: all 0.2s;
 }
 .generate:hover{
     border: 1px solid rgb(46, 46, 46) ;
-    color: rgb(182, 182, 182);
-    background: rgb(24, 24, 24);
+    background: rgb(33, 218, 42);
 }
 .add_texture{
     border: 1px solid rgb(12, 12, 12) ;
@@ -123,22 +124,6 @@ input[type="range"]::-moz-range-thumb {
     transition: all 0.2s;
 }
 .add_texture:hover{
-    border: 1px solid rgb(46, 46, 46) ;
-    color: rgb(182, 182, 182);
-    background: rgb(24, 24, 24);
-}
-.remove_texture{
-    border: 1px solid rgb(12, 12, 12) ;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 1.2em;
-    color: rgb(182, 182, 182);
-    padding: 10px;
-    margin: 10px 15px;
-    background: rgb(12, 12, 12);
-    transition: all 0.2s;
-}
-.remove_texture:hover{
     border: 1px solid rgb(46, 46, 46) ;
     color: rgb(182, 182, 182);
     background: rgb(24, 24, 24);
@@ -160,11 +145,12 @@ input[type="range"]::-moz-range-thumb {
     background: rgb(24, 24, 24);
 }
 .info{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-flow: row-reverse nowrap;
     align-content: center;
     justify-content: space-between;
+    margin-left: 15px;
 }
 .stats{
     display: flex;
@@ -237,23 +223,7 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: center;
-}
-.table_generate{
-    border: 1px solid rgb(12, 12, 12) ;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 1em;
-    color: rgb(182, 182, 182);
-    padding: 10px;
-    margin: 5px;
-    background: rgb(12, 12, 12);
-    transition: all 0.2s;
-}
-.table_generate:hover{
-    border: 1px solid rgb(46, 46, 46) ;
-    color: rgb(182, 182, 182);
-    background: rgb(24, 24, 24);
+    justify-content: flex-start;
 }
 .select_gen > select{
     font-size: 1em;   
@@ -363,7 +333,11 @@ td{
 .button_down{
     border: 1px solid rgb(12, 12, 12) !important;
     color: rgb(10, 10, 10) !important;
-    background: rgb(161, 161, 161) !important;
+    background: rgb(107, 107, 107) !important;
+}
+.button_down_green{
+    border: 1px solid rgb(12, 12, 12) !important;
+    background: rgb(139, 238, 144) !important;
 }
 .opacity_full{
     opacity: 0;
